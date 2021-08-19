@@ -24,8 +24,8 @@ In order to run everything all you need to do is run the following command:
 | PATH | METHOD | DESCRIPTION | PAYLOAD 
 | :--- | :--- | :--- | :--- |
 | `http://localhost:3022/api/task/bulk?ids=123,234,456` | `GET` | Get list of tasks by ids | ids: query param, comma seperated list of ids to get |
-| `http://localhost:3022/api/task/bulk` | `POST` | Create list of tasks | ` [{ _id: "123", name: "Task", status: "TODO" | "IN_PROGRESS" | "COMPLETED" }]`
-| `http://localhost:3022/api/task/bulk` | `PUT` | Update a list of tasks | ` [{ _id: "123", name: "Task", status: "TODO" | "IN_PROGRESS" | "COMPLETED" }]`
+| `http://localhost:3022/api/task/bulk` | `POST` | Create list of tasks | ` [{ _id: "123", name: "Task", status: "TODO" | "IN_PROGRESS" | "COMPLETED" }] `
+| `http://localhost:3022/api/task/bulk` | `PUT` | Update a list of tasks | ` [{ _id: "123", name: "Task", status: "TODO" | "IN_PROGRESS" | "COMPLETED" }] `
 | `http://localhost:3022/api/task/bulk?ids=123,234,456` | `DELETE` | Remove a list of task by ids | ids: query param, comma seperated list of ids to remove |
 
 ### Postman
