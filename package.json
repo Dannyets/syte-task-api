@@ -23,7 +23,7 @@
     "build": "yarn run clean && yarn run compile",
     "compile": "tsc --build",
     "clean": "rm -f -r lib && rm -f tsconfig.tsbuildinfo",
-    "start": "node lib/index.js",
+    "start": "node lib/app.js",
     "start:dev": "MONGO_DB_NAME=syte PORT=3022 MONGO_HOST=localhost:27017 ENABLE_GRPC=true GRPC_PORT=50051 ts-node src/app.ts"
   },
   "bugs": {

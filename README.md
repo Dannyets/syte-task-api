@@ -31,3 +31,11 @@ In order to run everything all you need to do is run the following command:
 ### Postman
 Use the following postman colleciton for this project:
         https://www.getpostman.com/collections/8b15d44579b2c41bd895
+
+## Tests
+To run the tests of the project, run the following commands:
+```
+yarn install
+docker-compose up mongodb
+yarn test
+```
