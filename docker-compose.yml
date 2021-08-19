@@ -1,19 +1,19 @@
 version: "3.8"
 services:
-  # tasks-api:
-  #   image: syte/tasks-api
-  #   container_name: syte-tasks-api
-  #   ports:
-  #   - 3022:3022
-  #   environment: 
-    # - MONGO_DB_NAME=syte 
-    # - PORT=3022 
-    # - MONGO_HOST=http://syte-mongodb:27017
-    # - MONGO_USER=root 
-    # - MONGO_PASSWORD=example
-    # - GRPC_PORT=50051
-    # - ENABLE_GRPC=true
-  
+  tasks-api:
+    image: syte/tasks-api
+    container_name: syte-tasks-api
+    build: .
+    ports:
+    - 3022:3022
+    environment: 
+    - MONGO_DB_NAME=syte 
+    - PORT=3022 
+    - MONGO_HOST=http://syte-mongodb:27017
+    - MONGO_USER=root 
+    - MONGO_PASSWORD=example
+    - GRPC_PORT=50051
+    - ENABLE_GRPC=true
 
   mongodb:
     image : mongo
