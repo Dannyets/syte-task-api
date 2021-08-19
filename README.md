@@ -37,7 +37,8 @@ In order to run everything all you need to do is run the following command:
 | `http://localhost:3022/api/task/bulk?ids=123,234,456` | `DELETE` | Remove a list of task by ids | ids - query param, comma seperated list of ids to remove |
 
 ### Postman
-Use the following postman colleciton for this project:
+Use the following postman colleciton,
+It contains all relevant api calls:
         https://www.getpostman.com/collections/8b15d44579b2c41bd895
 
 ## Tests
