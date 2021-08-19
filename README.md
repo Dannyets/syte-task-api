@@ -1,6 +1,11 @@
 # Syte Task Api
 
 Home assigment challenge to create task api.
+CRUD operations for task managment, contains both 
+Http and GRPC servers, supports protos, you can send requests to both servers.
+
+Http Server - Runs on http://localhost:3022
+GRPC Server - Runs on localhost:50051
 
 ## Installation
 ### Docker
