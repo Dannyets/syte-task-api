@@ -1,0 +1,47 @@
+package task;
+syntax = "proto3";
+
+service TaskApi {
+  rpc ListTasks(TaskFilter) returns (TaskList) {}
+
+  rpc CreateTask(Task) returns (TaskResponse) {}
+
+  rpc CreateTasks(TaskList) returns (TaskList) {}
+
+  rpc UpdateTask(Task) returns (MessageResponse) {}
+
+  rpc UpdateTasks(TaskList) returns (MessageResponse) {}
+
+  rpc RemoveTask(TaskFilter) returns (MessageResponse) {}
+
+  rpc RemoveTasks(TaskFilter) returns (MessageResponse) {}
+}
+
+enum TaskStatus {
+  TODO = 0;
+  IN_PROGRESS = 1;
+  COMPLETED = 2;
+};
+
+message Task {
+  optional string _id = 1;
+  string name = 2;
+  TaskStatus status = 3;
+}
+
+message TaskFilter {
+  repeated string ids = 1;
+  optional string id = 2;
+}
+
+message TaskList {
+  repeated Task tasks = 1;
+}
+
+message MessageResponse {
+  string message = 1;
+}
+
+message TaskResponse {
+  Task task = 1;
+}

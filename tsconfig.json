@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "composite": false,
+    "jsx": "react",
+    "target": "ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+  },
+  "include": [
+    "./src"
+, "tests/utils/grpc-client.ts"  ],
+  "exclude": [
+    "lib",
+    "__tests__"
+  ]
+}
