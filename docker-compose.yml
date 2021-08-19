@@ -9,7 +9,7 @@ services:
     environment: 
     - MONGO_DB_NAME=syte 
     - PORT=3022 
-    - MONGO_HOST=http://syte-mongodb:27017
+    - MONGO_HOST=syte-mongodb:27017
     - MONGO_USER=root 
     - MONGO_PASSWORD=example
     - GRPC_PORT=50051
