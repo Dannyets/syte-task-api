@@ -9,8 +9,9 @@ GRPC Server - Runs on localhost:50051
 
 ## Installation
 ### Docker
-In order to run everything all you need to do is run the following command:
+In order to run everything all you need to do is run the following commands:
 
+    yarn install
     docker-compose up
 
 ## Usage
