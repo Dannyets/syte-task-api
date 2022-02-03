@@ -11,3 +11,4 @@ RUN yarn install
 RUN yarn compile
 
 CMD ["yarn", "start"]
+
